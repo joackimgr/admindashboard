@@ -1,0 +1,90 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    display: grid;
+    grid-template-columns: 1fr 6fr;
+    grid-template-rows: 1fr 6fr;
+    margin: 0;
+}
+
+.sidebar img {
+    filter: invert(1);
+}
+
+.sidebar {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    font-size: 25px;
+    padding-left: 20px;
+    font-weight: 600;
+    grid-column-start: 1;
+    grid-column-end: 1;
+    grid-row-start: 1;
+    grid-row-end: 3;
+    height: 100vh;
+    background-color: #1992d4;
+    color: white;
+}
+
+.sidebar .title {
+    display: flex;
+    align-items: center;
+    margin-bottom: 35px;
+}
+
+.sidebar .nav {
+    margin-bottom: 35px;
+}
+
+.sidebar .title h2 {
+    margin-left: 20px;
+}
+
+.sidebar .nav .navBtns, .sidebar .settings .navBtns{
+    display: flex;
+    align-items: center;
+}
+
+.sidebar .nav .navBtns p, .sidebar .settings .navBtns p{
+    margin-left: 30px;
+}
+
+.header {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    grid-template-rows: 1fr 1fr;
+}
+
+.main {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+}
+
+.projectTabs {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-column-start: 1;
+    grid-column-end: 1;
+    grid-row-start: 1;
+    grid-row-end: 3;
+}
+
+.announcements {
+    display: grid;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 1;
+}
+
+.trending {
+    display: grid;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 3;
+}
+
